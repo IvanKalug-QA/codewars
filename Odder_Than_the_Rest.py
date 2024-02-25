@@ -8,3 +8,9 @@
 # odd_one([2,16,98,10,13,78]) # => 4
 # odd_one([4,-8,98,-12,-7,90,100]) # => 4
 # odd_one([2,4,6,8]) # => -1
+
+def odd_one(arr):
+    for i, v in enumerate(arr):
+        if v % 2 != 0:
+            return i
+    return -1
